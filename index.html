@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <p id="output"></p>
+                <span class="error-message"></span>
+            </div>
+
+            
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" inputmode="email">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" inputmode="numeric">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <button type="submit">Submit</button>
+            </div>
+
+            <!--<script>
+                var fullName = document.getElementById("fullName");
+                var output =document.getElementById("output")
+            
+            
+                function update(){
+                    output.textContent=fullName.value
+                }
+            </script>
+        -->
+
+        
+        </form>
+    </div>
+</body>
+</html>
+
